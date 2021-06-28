@@ -1,0 +1,17 @@
+.Button {
+  min-width: 100px;
+  height: 40px;
+  border-radius: 0;
+  border: none;
+  background-color: var(--grey);
+  color: var(--black);
+
+  &.primary {
+    background-color: var(--blue);
+    color: var(--white);
+  }
+
+  &:disabled {
+    background-color: darkgray;
+  }
+}

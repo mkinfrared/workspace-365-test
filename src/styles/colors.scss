@@ -1,0 +1,12 @@
+$colors: (
+  black: #000000,
+  blue: #3b77b3,
+  grey: #e7e7e7,
+  white: #ffffff
+);
+
+:root {
+  @each $name, $value in $colors {
+    --#{$name}: #{$value};
+  }
+}

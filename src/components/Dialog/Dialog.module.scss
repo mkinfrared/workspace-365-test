@@ -1,0 +1,77 @@
+.Dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1040;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .container {
+    flex: 1;
+    background-color: var(--white);
+    padding: 40px;
+    min-width: 320px;
+    max-width: 800px;
+    font-size: 18px;
+    color: var(--black);
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+  }
+
+  .heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 30px;
+    margin-bottom: 40px;
+
+    > h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .close {
+      background-color: transparent;
+    }
+  }
+
+  .itemList {
+    margin-bottom: 40px;
+
+    .item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 60px;
+
+    > p:last-child {
+      text-align: right;
+    }
+  }
+
+  .buttonGroup {
+    display: flex;
+    justify-content: flex-end;
+
+    .button {
+      svg {
+        height: 100%;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
